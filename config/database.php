@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', DB_CONNECTION),
 
     /*
     |--------------------------------------------------------------------------
@@ -46,8 +46,8 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'smartitask.com'),
-            'port' => env('DB_PORT', '3306'),
+            'host' => env('DB_HOST', DB_HOST),
+            'port' => env('DB_PORT', DB_PORT),
             'database' => env('DB_DATABASE', DB_DATABASE),
             'username' => env('DB_USERNAME', DB_USERNAME),
             'password' => env('DB_PASSWORD', DB_PASSWORD),
